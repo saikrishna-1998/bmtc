@@ -1,6 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     padding: 40px;
+    
+}
+.main-body{
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: white;
+
 }
 
 h1 {
