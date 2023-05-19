@@ -25,6 +25,7 @@ label {
 select {
     width: 200px;
     margin-bottom: 10px;
+    
 }
 
 
@@ -47,6 +48,8 @@ body {
     justify-content: center;
     align-items: center;
     background: #000;
+    
+    
 }
 
 .glow-on-hover {
@@ -107,4 +110,9 @@ body {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+.dropdown-box{
+    border: 2px solid rgb(51, 243, 13);
+    width: 300px;
 }
