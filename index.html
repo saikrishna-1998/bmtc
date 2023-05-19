@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>BMTC Bus Details</title>
+    <script src="https://kit.fontawesome.com/dc0d9c014f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Google tag (gtag.js) -->
@@ -19,11 +20,12 @@
         <div>
             <h1 class="p-5">BMTC Bus Details</h1>
         </div>
-        <div class="d-flex flex-row justify-content-center">
+        <div class="d-flex flex-row justify-content-center ">
             <form>
-                <div class="p-2">
-                    <label for="start-stop">Start Stop:</label>
-                <select id="start-stop">
+                <div class="p-2  ">
+                    <i class="fa-solid fa-map-pin fa-bounce fa-2xl"></i>
+                    <label for="start-stop">From :</label>
+                <select id="start-stop" >
                     <option value="Chandapura">Chandapura</option>
                     <option value="Suryacity_Gate">Suryacity Gate</option>
                     <option value="Iggluru">Iggluru</option>
@@ -42,8 +44,9 @@
                 </select>
                 </div>
                 <div class="p-2">
-                    <label for="end-stop">&nbsp End Stop:</label>
-                    <select id="end-stop" class="select" >
+                    <i class="fa-solid fa-map-pin fa-bounce fa-2xl"></i>
+                    <label for="end-stop">&nbsp   To &nbsp : </label>
+                    <select id="end-stop">
                         <option value="Chandapura">Chandapura</option>
                         <option value="Suryacity_Gate">Suryacity Gate</option>
                         <option value="Iggluru">Iggluru</option>
@@ -61,8 +64,9 @@
                         <option value="Anekal">Anekal</option>
                     </select>
                 </div>
+                
                 <div class="pt-3 d-flex flex-row justify-content-center">
-                    <button type="button" class="glow-on-hover" onclick="searchBuses()">Search</button>
+                    <button type="button" class="glow-on-hover" onclick="searchBuses()">Search Fare</button>
                 </div>
             </form>
             
@@ -73,8 +77,6 @@
        
 
         
-    
-        <!-- <div id="bus-details"></div> -->
     
         <script>
             var busData = [
@@ -533,7 +535,9 @@
                 }
             }
         </script>
+        
     </div>
+    
 </body>
 </html>
 
